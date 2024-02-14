@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:13-alpine
+    ports:
+      - 54320:5432
+    restart: always
+    environment:
+      POSTGRES_DB: db-api
+      POSTGRES_USER: db-api-app
+      POSTGRES_PASSWORD: 6aDHhk0376!a2e
